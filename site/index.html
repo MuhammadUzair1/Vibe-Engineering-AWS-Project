@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CloudFolio | Muhammad Uzair Khan</title>
+  <meta name="description" content="CloudFolio — the personal portfolio of Muhammad Uzair Khan, Data Engineer specializing in Azure, Snowflake, Databricks, and AWS." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="hero">
+    <nav class="navbar" aria-label="Primary">
+      <span class="brand">CloudFolio</span>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content">
+      <h1>CloudFolio &mdash; Muhammad Uzair Khan</h1>
+      <p class="tagline">Data Engineer | Azure &middot; Snowflake &middot; Databricks &middot; AWS</p>
+      <div class="hero-actions">
+        <a class="button primary" href="assets/CV.pdf" download>Download CV</a>
+        <a class="button secondary" href="#projects">View Projects</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="about" class="section" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>
+        I'm a Data Engineer with 4+ years of experience delivering production-grade pipelines across
+        Azure, Snowflake, Databricks, and AWS, with real-world deployments in healthcare and FMCG environments.
+        I specialize in medallion architecture, ELT orchestration, and performance/cost optimization, working
+        hands-on with Snowpipe, SnowSQL, Airflow, ADF, Python, and PySpark. I enjoy bridging engineering and
+        business stakeholders to build reliable, auditable, and scalable data systems.
+      </p>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Skills</h2>
+      <ul class="tag-list">
+        <li class="tag">AWS Glue</li>
+        <li class="tag">AWS Lambda</li>
+        <li class="tag">AWS S3</li>
+        <li class="tag">Azure Data Factory</li>
+        <li class="tag">Databricks</li>
+        <li class="tag">PySpark</li>
+        <li class="tag">Snowflake</li>
+        <li class="tag">SnowSQL</li>
+        <li class="tag">Snowpipe</li>
+        <li class="tag">Airflow</li>
+        <li class="tag">Delta Lake</li>
+        <li class="tag">Medallion Architecture</li>
+        <li class="tag">Python</li>
+        <li class="tag">SQL</li>
+        <li class="tag">CI/CD (GitHub Actions)</li>
+        <li class="tag">Great Expectations</li>
+        <li class="tag">Power BI</li>
+        <li class="tag">Event-Driven Pipelines</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Projects</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Real-Time Sales Analytics Pipeline</h3>
+          <p class="card-subtitle">AWS Data Engineering</p>
+          <p>
+            Event-driven pipeline built with AWS Glue, Lambda, S3, and EventBridge for real-time ingestion of
+            high-volume transactional data. Multi-zone Raw &rarr; Staging &rarr; Curated architecture via AWS
+            Lake Formation cut processing latency by 45%, with Step Functions and SNS automating failure
+            alerts and retries.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Customer Information Data Warehousing</h3>
+          <p class="card-subtitle">Snowflake &amp; AWS Integration</p>
+          <p>
+            Production Snowflake warehouse integrating S3, CRM, and transactional sources via Snowpipe,
+            cutting ingestion time by 60% through automated JSON/CSV staging. Snowflake Streams and Tasks
+            power incremental processing, with schema-versioned SnowSQL promotion scripts.
+          </p>
+        </article>
+        <article class="card">
+          <h3>Snowflake Pipeline with CI/CD &amp; Data Quality Framework</h3>
+          <p class="card-subtitle">Snowflake &middot; Great Expectations &middot; GitHub Actions</p>
+          <p>
+            Production-grade Snowflake ELT pipeline using SnowSQL and Snowpark Python, with a Great
+            Expectations data quality framework blocking non-conforming data from the Gold layer. GitHub
+            Actions CI/CD automates linting, pytest, and zero-downtime schema migrations.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section" aria-labelledby="gallery-heading">
+      <h2 id="gallery-heading">Gallery</h2>
+      <div class="gallery">
+        <img src="assets/img1.jpg" alt="Screenshot of a data pipeline dashboard" loading="lazy" width="400" height="300" />
+        <img src="assets/img2.jpg" alt="Screenshot of a cloud architecture diagram" loading="lazy" width="400" height="300" />
+        <img src="assets/img3.jpg" alt="Photo from a data engineering workshop or event" loading="lazy" width="400" height="300" />
+      </div>
+    </section>
+
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <ul class="contact-list">
+        <li><a href="mailto:muhammaduzairkhan329@gmail.com">muhammaduzairkhan329@gmail.com</a></li>
+        <li><a href="https://github.com/MuhammadUzair1/" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/muhammaduzairkhan1/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span class="badge">Deployed on AWS EC2 via CodePipeline</span>
+    <small id="deploy-info"></small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
